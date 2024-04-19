@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+#  Underwater-Image-Enhancement-and-Debris-Detection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Project Setup Guide
 
-In the project directory, you can run:
+clone the project using 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+     git clone https://github.com/Anandhu-Jayan/Underwater-Image-Enhancement-and-Debris-Detection
+cd into the new folder and type
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+    npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This installs the required dependencies
 
-### `npm run build`
+To run the React project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install the python dependencies and clone the detectron2 model from [here](https://github.com/facebookresearch/detectron2 "here")
 
-### `npm run eject`
+##### Image Enhancement was implemented from the following reasearch work
+[The Retinex based improved underwater image enhancement](https://dl.acm.org/doi/10.1007/s11042-020-09752-2 "The Retinex based improved underwater image enhancement")
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Detectron2 Mask RCNN was used for instance segmentation , the following research work was also helpful [[1]],[[2]]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[1]: https://link.springer.com/chapter/10.1007/978-3-031-04881-4_49 "The CleanSea Set: A Benchmark Corpus for Underwater Debris Detection and Recognition"
+[2]:https://www.sciencedirect.com/science/article/pii/S0167865522003889 "An experimental study on marine debris location and recognition using object detection"
